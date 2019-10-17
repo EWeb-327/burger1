@@ -42,7 +42,10 @@ $(function(){
             data: newBurger
         }).then(function(){
             console.log("created new burger");
-            location.reload()
+            window.location.replace("http://localhost:3000/burgers")
         });
+
+        
     });
 });
+ç

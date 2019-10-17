@@ -1,8 +1,8 @@
 <li>
 	{{burger_name}}
 
-	<button class="change-devour" data-id="{{id}}" data-newdev="{{devour}}">
+	<a href="http://localhost:3000/burgers"><button class="change-devour" data-id="{{id}}" data-newdev="{{devour}}">
 		{{#if devour}}EAT THIS!{{else}}ORDER ANOTHER!{{/if}}
-	</button>
-	<button class="delete" data-id="{{id}}">DELETE</button>
+	</button></a>
+	<a href="http://localhost:3000/burgers"><button class="delete" data-id="{{id}}">DELETE</button></a>
 </li>

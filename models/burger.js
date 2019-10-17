@@ -12,7 +12,6 @@ var burger = {
         });
     },
     update: function(objColVals, condition, cb){
-        //.update("burgers", {devoured: 'true'}, "id = 4", cb)
         orm.updateOne("burgers", objColVals, condition, function(data){
             cb(data);
         });
