@@ -42,7 +42,7 @@ $(function(){
             data: newBurger
         }).then(function(){
             console.log("created new burger");
-            window.location.replace("http://localhost:3000/burgers")
+            window.location.replace("/burgers")
         });
 
         
