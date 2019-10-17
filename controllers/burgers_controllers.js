@@ -17,17 +17,17 @@ router.post("/api/burgers", function(req,res){
     burger.create([
         "burger_name", "devoured"
     ],[
-        req.body.burgerName, req.body.devoured
+        req.body.burger_name, req.body.devoured
     ], function(data){
         res.json({id: data.insertId});
     });
 });
 
 router.put("/api/burgers/:id", function(req,res){
-    var condition = `id = ${req.params.id}`
+    var condition = "id = " + req.params.id;
+    console.log(req.body)
 
     console.log("condition", condition);
-
     burger.update({
         devoured: req.body.devoured
     }, condition, function(data){
@@ -40,8 +40,7 @@ router.put("/api/burgers/:id", function(req,res){
 });
 
 router.delete("/api/burgers/:id", function(req,res){
-    var condition = `id = ${req.params.id}`
-
+    var condition = "id = " + req.params.id;
     burger.delete(condition, function(data){
         if(data.affectedRows === 0){
             return res.json(404).end();

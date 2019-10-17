@@ -47,8 +47,8 @@ var orm = {
         })
     },
     updateOne: function (table, objColVals, condition, cb){
-        var formatObj = objToSql(objColVals)
-        connection.query(`UPDATE ${table} SET ${formatObj} WHERE ${condition}`, function(err, data){
+      console.log(objToSql(objColVals))
+        connection.query(`UPDATE ${table} SET ${objToSql(objColVals)} WHERE ${condition}`, function(err, data){
             if (err) throw err;
             cb(data);
         })
