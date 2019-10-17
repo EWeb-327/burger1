@@ -1,21 +1,21 @@
 <wrapper>
-<header><img src="{{root}}/assets/img/burger.png" width="150px" height="180px">
-<h1>Burgers!</h1>
+<header><img src="{{root}}/assets/img/burger.png" width="150px" height="160px">
+<h1>BURGERS!</h1>
 </header>
 
-<div id="addBurger">
-<h2>Add a Burger</h2>
+<div id="addBurgerH">
+<h2>ADD A BURGER</h2>
 <form class="create-form">
 
   <div class="form-group">
     <label for="bu">Burger Name:</label>
     <input type="text" id="bu" name="burger_name">
   </div>
-
+  
   <div class="form-group">
-    <label for="dev">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> All Gone!<br>
-    <input type="radio" name="devoured" value="0"> Not Yet!
+    <label for="dev"><h3>Devoured?</h3></label>
+    <div><input type="radio" name="devoured" value="1" style="float: left" checked><p class="option pH" >All Gone!</p></div><br>
+    <div><input type="radio" name="devoured" value="0" style="float: left"><p class="option pH">Not Yet!</p></div>
   </div>
 
   <a href="http://localhost:3000/burgers"><button type="submit">Add Burger</button></a>

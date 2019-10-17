@@ -1,9 +1,36 @@
 wrapper{
     margin: auto;
+    position: absolute;
+    left: 40%;
+    text-align: center;
 }
-.hidden {
-    display: none;
+h1, h2 {
+    margin-top: 0;
+    font-family: 'Hepta Slab', serif;
 }
-.show {
-    display: block;
+ul, label, .option, button{
+    font-family: 'Montserrat', sans-serif;
+}
+.pH {
+    width: 247.81px;
+}
+p {
+    width: 160px;
+}
+#toEat {
+    position: absolute;
+    left: -180%;
+    background: #ffeecc;
+    width: 400px;
+}
+#Eaten{
+    position: absolute;
+    right: -180%;
+    background: #99ac6f;
+    width: 400px;
+    opacity: 0.8;
+}
+#addBurger{
+    position: absolute;
+    top: 200%;
 }
